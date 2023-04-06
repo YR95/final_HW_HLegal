@@ -1,0 +1,19 @@
+@mixin flex($dis,$dir,$just-cont,$align-it) {
+  display: $dis;
+  flex-direction: $dir;
+  justify-content: $just-cont;
+  align-items: $align-it;
+}
+
+@mixin font_settings($font-family, $font-size,$font-weight) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+}
+
+@mixin grid($display,$gtc,$gtr) {
+  display: $display;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+}

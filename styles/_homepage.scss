@@ -1,0 +1,31 @@
+@import "genaral__style";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+.container-header {
+  background: linear-gradient(to bottom left, blue, pink);
+}
+
+.navigation {
+@include flex(flex, row, space-around, center)
+}
+
+.container-info {
+ @include flex(flex, column, space-around, center)
+
+}
+
+.info-lang {@include flex(flex, row, space-around, center)
+}
+
+.info-lang > li {
+
+  padding: 5%;
+  color: $color1;
+}
