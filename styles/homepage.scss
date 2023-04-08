@@ -1,0 +1,38 @@
+@import "genaral__style";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.container-header {
+  background: linear-gradient(to bottom left, $color4, $color2);
+}
+
+.navigation {
+  @include flex(flex, row, space-around, center)
+}
+
+.container-info {
+  @include flex(flex, column, space-around, center)
+}
+
+.info-lang {
+  @include flex(flex, row, space-around, center);
+
+  &__el {
+    @include font_settings($font-family-Montserrat, 700, 12);
+    padding: 5%;
+    color: $color1;
+
+    &--isHighlighted {
+      background: $color2;
+      border-radius: 30px;
+    }
+  }
+
+}
+
