@@ -179,6 +179,7 @@
   &__team {
     color: $color3;
     @include font_settings($font-family-Montserrat, 14px, 700);
+    text-transform: uppercase;
 
   }
 
@@ -212,10 +213,69 @@
   @include font_settings($font-family-Montserrat, 16px, 700);
   text-align: center;
   color: $color4;
+  text-transform: uppercase;
+
 }
-.clients-img{
+
+.clients-img {
   @include grid(grid, repeat(4, auto), repeat(3, auto));
 }
-.clients-img>img{
-  width:23vw
+
+.clients-img > img {
+  width: 23vw
+}
+
+.publications {
+  @include flex(flex, column, flex-start, none);
+  gap: 1vw;
+  padding: 2vw;
+  background: $color8;
+
+
+  &__header {
+    @include font_settings($font-family-Montserrat, 14px, 700);
+    color: $color3;
+    text-transform: uppercase;
+
+  }
+
+  &__info {
+    @include font_settings($font-family-Montserrat, 38px, 700);
+    color: $color2;
+
+  }
+}
+
+.blocks-info {
+  @include flex(flex, row, center, stretch);
+  gap: 1vw;
+}
+
+.info-items-el {
+  @include flex(flex, column, none, none);
+  background: $color1;
+  padding: 3vw;
+  gap: 2vw;
+
+  &__img {
+    width: 25vw;
+  }
+
+  &__header {
+    @include font_settings($font-family-Montserrat, 16px, 700);
+    color: $color3;
+  }
+
+  &__header2 {
+    @include font_settings($font-family-Montserrat, 12px, 700);
+    color: $color6;
+    text-transform: uppercase;
+    border-bottom: solid 3px $color7;
+
+  }
+
+  &__info {
+    @include font_settings($font-family-Montserrat, 14px, 400);
+    color: $color9;
+  }
 }

@@ -202,6 +202,7 @@
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .team-texts__infos {
   color: rgb(240, 20, 90);
@@ -237,6 +238,7 @@
   font-weight: 700;
   text-align: center;
   color: rgb(50, 50, 100);
+  text-transform: uppercase;
 }
 
 .clients-img {
@@ -247,6 +249,70 @@
 
 .clients-img > img {
   width: 23vw;
+}
+
+.publications {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: none;
+  gap: 1vw;
+  padding: 2vw;
+  background: rgb(245, 245, 250);
+}
+.publications__header {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(36, 163, 255);
+  text-transform: uppercase;
+}
+.publications__info {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  color: rgb(240, 20, 90);
+}
+
+.blocks-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1vw;
+}
+
+.info-items-el {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  background: rgb(255, 255, 255);
+  padding: 3vw;
+  gap: 2vw;
+}
+.info-items-el__img {
+  width: 25vw;
+}
+.info-items-el__header {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(36, 163, 255);
+}
+.info-items-el__header2 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(202, 202, 219);
+  text-transform: uppercase;
+  border-bottom: solid 3px rgb(231, 231, 242);
+}
+.info-items-el__info {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=homepage.css.map */
