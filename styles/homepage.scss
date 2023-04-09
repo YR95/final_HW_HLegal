@@ -9,11 +9,14 @@
 }
 
 .container-header {
-  background: linear-gradient(to bottom left, $color4, $color2);
+ background: linear-gradient(to bottom left, $color4 70%, $color2);
+  @include flex(flex, row, center, space-around);
+
 }
 
 .navigation {
-  @include flex(flex, row, space-around, center)
+  @include flex(flex, row, space-between, flex-start);
+  padding: 2vw;
 }
 
 .container-info {
@@ -24,15 +27,44 @@
   @include flex(flex, row, space-around, center);
 
   &__el {
-    @include font_settings($font-family-Montserrat, 700, 12);
-    padding: 5%;
+    @include font_settings($font-family-Montserrat, 12px, 700);
+    padding: 0.7vw;
     color: $color1;
 
     &--isHighlighted {
       background: $color2;
-      border-radius: 30px;
+      border-radius: 18px;
     }
   }
 
-}
+  &__link {
+    @include font_settings($font-family-Montserrat, 16px, 700);
+    padding: 0.7vw;
+    color: $color1;
 
+  }
+
+
+}
+.logos {
+  //@include flex(flex, column, space-around, center);
+  position: relative;
+  text-align: center;
+
+
+  &__text {
+    text-align: center;
+    @include font_settings($font-family-Montserrat, 38px, 700);
+    color: $color1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: pre;
+  }
+  &__symbol{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+  }
+}
