@@ -9,8 +9,8 @@
 }
 
 .container-header {
- background: linear-gradient(to bottom left, $color4 70%, $color2);
-  @include flex(flex, row, center, space-around);
+  background: linear-gradient(to bottom left, $color4 90%, $color2);
+  @include flex(flex, column, center, space-around);
 
 }
 
@@ -46,8 +46,8 @@
 
 
 }
+
 .logos {
-  //@include flex(flex, column, space-around, center);
   position: relative;
   text-align: center;
 
@@ -62,9 +62,160 @@
     transform: translate(-50%, -50%);
     white-space: pre;
   }
-  &__symbol{
+
+  &__symbol {
     position: absolute;
     top: 90%;
     left: 40%;
   }
+}
+
+.business {
+  @include flex(flex, row, center, center);
+
+  &__items {
+    border-right: solid 1px $color5;
+    padding: 2vw;
+    text-align: center;
+    @include font_settings($font-family-Montserrat, 38px, 700);
+    color: $color5;
+
+    :first-child {
+      background: -webkit-linear-gradient($color2, $color1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+
+  &__text {
+    width: 50%;
+    padding: 2vw;
+    text-align: center;
+    @include font_settings($font-family-Montserrat, 19px, 400);
+    color: $color1;
+
+
+    :first-child {
+      @include font_settings($font-family-Montserrat, 30px, 700);
+    }
+  }
+}
+
+.services {
+  padding-top: 2vw;
+  padding-left: 6vw;
+  @include flex(flex, column, center, flex-start);
+  gap: 1vw;
+
+  &__header {
+    color: $color2;
+    @include font_settings($font-family-Montserrat, 38px, 700);
+  }
+
+  &__link {
+    color: $color3;
+    @include font_settings($font-family-Montserrat, 14px, 700);
+
+  }
+}
+
+.table {
+  @include grid(grid, repeat(3, auto), repeat(3, auto));
+  gap: 2vw;
+  column-gap: 3vw;
+  padding: 2vw;
+
+}
+
+.table-infos {
+  @include flex(flex, column, flex-start, center);
+  gap: 2vw;
+
+  &__header {
+    color: $color3;
+    @include font_settings($font-family-Montserrat, 22px, 700);
+
+  }
+
+  &__text {
+    color: $color1;
+    @include font_settings($font-family-Montserrat, 16px, 400);
+
+  }
+}
+
+.shadow {
+  background: $color6;
+  height: 0.7vw;
+  border-radius: 20px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+
+  &--isLighter {
+    background: $color7;
+    height: 0.7vw;
+    border-radius: 20px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+}
+
+.team {
+  @include flex(flex, row, flex-start, stretch);
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.team-texts {
+  background: $color7;
+  @include flex(flex, column, flex-start, flex-start);
+  gap: 1vw;
+  width: 100vw;
+  padding: 2vw;
+
+  &__team {
+    color: $color3;
+    @include font_settings($font-family-Montserrat, 14px, 700);
+
+  }
+
+  &__infos {
+    color: $color2;
+    @include font_settings($font-family-Montserrat, 38px, 700);
+
+  }
+
+  &__head1 {
+
+    color: $color6;
+    @include font_settings($font-family-Montserrat, 16px, 700);
+  }
+
+  &__head2 {
+
+    color: $color6;
+    @include font_settings($font-family-Montserrat, 14px, 400);
+  }
+}
+
+.clients {
+  @include flex(flex, column, center, center);
+  gap: 1vw;
+  padding: 2vw;
+
+}
+
+.clients > p {
+  @include font_settings($font-family-Montserrat, 16px, 700);
+  text-align: center;
+  color: $color4;
+}
+.clients-img{
+  @include grid(grid, repeat(4, auto), repeat(3, auto));
+}
+.clients-img>img{
+  width:23vw
 }
