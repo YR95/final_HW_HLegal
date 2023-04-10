@@ -116,7 +116,7 @@
   &__link {
     color: $color3;
     @include font_settings($font-family-Montserrat, 14px, 700);
-
+text-transform: uppercase;
   }
 }
 
@@ -277,5 +277,61 @@
   &__info {
     @include font_settings($font-family-Montserrat, 14px, 400);
     color: $color9;
+  }
+}
+
+.contacts {
+  border-top: solid 2px $color7;
+  background: $color8;
+  @include flex(flex, row, space-around, stretch);
+  gap: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+
+  &__legacy {
+    @include font_settings($font-family-Montserrat, 16px, 400);
+    color: $color6;
+  }
+}
+
+.footer-cont {
+  @include flex(flex, column, center, flex-start);
+  gap: 1vw;
+}
+
+.info-cont {
+  //padding-top: 2vw;
+  //padding-bottom: 1vw;
+  @include flex(flex, row, center, center);
+  gap: 1vw;
+
+  &__addr {
+    color: $color4;
+    @include font_settings($font-family-Montserrat, 14px, 400);
+
+  }
+
+  &__map {
+    text-transform: uppercase;
+    color: $color3;
+    @include font_settings($font-family-Montserrat, 12px, 700);
+
+  }
+}
+
+.info-social {
+  @include flex(flex, row, center, center);
+  gap: 0.4vw;
+
+
+  &__num {
+    color: $color4;
+    @include font_settings($font-family-Montserrat, 16px, 700);
+  }
+
+  &__email {
+    @include font_settings($font-family-Montserrat, 16px, 700);
+    color: $color3;
+
   }
 }
