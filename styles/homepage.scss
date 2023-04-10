@@ -27,7 +27,7 @@
   @include flex(flex, row, space-around, center);
 
   &__el {
-    @include font_settings($font-family-Montserrat, 12px, 700);
+    @include font_settings($font-family-Montserrat, 1rem, 700);
     padding: 0.7vw;
     color: $color1;
 
@@ -38,7 +38,7 @@
   }
 
   &__link {
-    @include font_settings($font-family-Montserrat, 16px, 700);
+    @include font_settings($font-family-Montserrat, 1.3rem, 700);
     padding: 0.7vw;
     color: $color1;
 
@@ -54,7 +54,7 @@
 
   &__text {
     text-align: center;
-    @include font_settings($font-family-Montserrat, 38px, 700);
+    @include font_settings($font-family-Montserrat, 3.16rem, 700);
     color: $color1;
     position: absolute;
     top: 50%;
@@ -77,7 +77,7 @@
     border-right: solid 1px $color5;
     padding: 2vw;
     text-align: center;
-    @include font_settings($font-family-Montserrat, 38px, 700);
+    @include font_settings($font-family-Montserrat, 3.16rem, 700);
     color: $color5;
 
     :first-child {
@@ -92,12 +92,12 @@
     width: 50%;
     padding: 2vw;
     text-align: center;
-    @include font_settings($font-family-Montserrat, 19px, 400);
+    @include font_settings($font-family-Montserrat, 1.58rem, 400);
     color: $color1;
 
 
     :first-child {
-      @include font_settings($font-family-Montserrat, 30px, 700);
+      @include font_settings($font-family-Montserrat, 2.5rem, 700);
     }
   }
 }
@@ -110,12 +110,12 @@
 
   &__header {
     color: $color2;
-    @include font_settings($font-family-Montserrat, 38px, 700);
+    @include font_settings($font-family-Montserrat, 3.16rem, 700);
   }
 
   &__link {
     color: $color3;
-    @include font_settings($font-family-Montserrat, 14px, 700);
+    @include font_settings($font-family-Montserrat, 1.16rem, 700);
 text-transform: uppercase;
   }
 }
@@ -134,13 +134,13 @@ text-transform: uppercase;
 
   &__header {
     color: $color3;
-    @include font_settings($font-family-Montserrat, 22px, 700);
+    @include font_settings($font-family-Montserrat, 1.83rem, 700);
 
   }
 
   &__text {
     color: $color1;
-    @include font_settings($font-family-Montserrat, 16px, 400);
+    @include font_settings($font-family-Montserrat, 1.3rem, 400);
 
   }
 }
@@ -173,33 +173,37 @@ text-transform: uppercase;
   background: $color7;
   @include flex(flex, column, flex-start, flex-start);
   gap: 1vw;
-  width: 100vw;
+  //width: 100vw;
   padding: 2vw;
 
   &__team {
     color: $color3;
-    @include font_settings($font-family-Montserrat, 14px, 700);
+    @include font_settings($font-family-Montserrat, 1.16rem, 700);
     text-transform: uppercase;
 
   }
 
   &__infos {
     color: $color2;
-    @include font_settings($font-family-Montserrat, 38px, 700);
+    @include font_settings($font-family-Montserrat, 2.5rem, 700);
 
   }
 
   &__head1 {
 
     color: $color6;
-    @include font_settings($font-family-Montserrat, 16px, 700);
+    @include font_settings($font-family-Montserrat, 1.3rem, 700);
   }
 
   &__head2 {
 
     color: $color6;
-    @include font_settings($font-family-Montserrat, 14px, 400);
+    @include font_settings($font-family-Montserrat, 1.16rem, 400);
   }
+}
+
+.team>img{
+  max-height: 483px;
 }
 
 
@@ -211,7 +215,7 @@ text-transform: uppercase;
 }
 
 .clients > p {
-  @include font_settings($font-family-Montserrat, 16px, 700);
+  @include font_settings($font-family-Montserrat, 1.33rem, 700);
   text-align: center;
   color: $color4;
   text-transform: uppercase;
@@ -234,14 +238,14 @@ text-transform: uppercase;
 
 
   &__header {
-    @include font_settings($font-family-Montserrat, 14px, 700);
+    @include font_settings($font-family-Montserrat, 1.16rem, 700);
     color: $color3;
     text-transform: uppercase;
 
   }
 
   &__info {
-    @include font_settings($font-family-Montserrat, 38px, 700);
+    @include font_settings($font-family-Montserrat, 3.16rem, 700);
     color: $color2;
 
   }
@@ -263,12 +267,12 @@ text-transform: uppercase;
   }
 
   &__header {
-    @include font_settings($font-family-Montserrat, 16px, 700);
+    @include font_settings($font-family-Montserrat, 1.33rem, 700);
     color: $color3;
   }
 
   &__header2 {
-    @include font_settings($font-family-Montserrat, 12px, 700);
+    @include font_settings($font-family-Montserrat, 1rem, 700);
     color: $color6;
     text-transform: uppercase;
     border-bottom: solid 3px $color7;
@@ -276,7 +280,7 @@ text-transform: uppercase;
   }
 
   &__info {
-    @include font_settings($font-family-Montserrat, 14px, 400);
+    @include font_settings($font-family-Montserrat, 1.16rem, 400);
     color: $color9;
   }
 }
@@ -290,7 +294,7 @@ text-transform: uppercase;
   padding-bottom: 2vw;
 
   &__legacy {
-    @include font_settings($font-family-Montserrat, 16px, 400);
+    @include font_settings($font-family-Montserrat, 1.33rem, 400);
     color: $color6;
   }
 }
@@ -308,14 +312,14 @@ text-transform: uppercase;
 
   &__addr {
     color: $color4;
-    @include font_settings($font-family-Montserrat, 14px, 400);
+    @include font_settings($font-family-Montserrat, 1.16rem, 400);
 
   }
 
   &__map {
     text-transform: uppercase;
     color: $color3;
-    @include font_settings($font-family-Montserrat, 12px, 700);
+    @include font_settings($font-family-Montserrat, 1rem, 700);
 
   }
 }
@@ -327,11 +331,11 @@ text-transform: uppercase;
 
   &__num {
     color: $color4;
-    @include font_settings($font-family-Montserrat, 16px, 700);
+    @include font_settings($font-family-Montserrat, 1.33rem, 700);
   }
 
   &__email {
-    @include font_settings($font-family-Montserrat, 16px, 700);
+    @include font_settings($font-family-Montserrat, 1.33rem, 700);
     color: $color3;
 
   }
