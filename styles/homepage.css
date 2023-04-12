@@ -415,23 +415,23 @@
   }
   .team-texts__infos {
     font-family: Montserrat;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
   }
   .table-infos__text {
     font-family: Montserrat;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
   }
   .table-infos__header {
     font-family: Montserrat;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     text-align: center;
   }
   .services__header {
     font-family: Montserrat;
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
   }

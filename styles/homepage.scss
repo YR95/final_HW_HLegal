@@ -367,19 +367,19 @@ height: 50vh;
 
   }
   .team-texts__infos {
-    @include font_settings($font-family-Montserrat, 1.5rem, 700);
+    @include font_settings($font-family-Montserrat, 1.3rem, 700);
 
   }
   .table-infos__text {
-    @include font_settings($font-family-Montserrat, 1rem, 400);
+    @include font_settings($font-family-Montserrat, 0.8rem, 400);
 
   }
   .table-infos__header {
-    @include font_settings($font-family-Montserrat, 1.3rem, 700);
+    @include font_settings($font-family-Montserrat, 1.1rem, 700);
     text-align: center;
   }
   .services__header {
-    @include font_settings($font-family-Montserrat, 2.1rem, 700);
+    @include font_settings($font-family-Montserrat, 2rem, 700);
     text-align: center;
   }
   .business {
