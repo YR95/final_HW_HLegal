@@ -162,6 +162,21 @@
   font-weight: 400;
 }
 
+@media (min-width: 390px) and (max-width: 768px) {
+  .invisible {
+    display: none;
+  }
+  .logos__H {
+    width: 80vw;
+    height: 50vh;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 .shadow {
   background: rgb(202, 202, 219);
   height: 0.7vw;
@@ -384,6 +399,192 @@
   font-size: 1.33rem;
   font-weight: 700;
   color: rgb(36, 163, 255);
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .table {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(12, auto);
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .team-texts__infos {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .table-infos__text {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .table-infos__header {
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .services__header {
+    font-family: Montserrat;
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .business {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .business .business__items {
+    display: flex;
+    overflow: auto;
+  }
+  .business__items::-webkit-scrollbar {
+    display: none;
+  }
+  .business__items > * {
+    padding: 2vw;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .business__text:first-child {
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .business__text {
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .clients-img {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(12, auto);
+  }
+  .clients-img > img {
+    width: 50vw;
+  }
+  .blocks-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-items-el__img {
+    width: 60vw;
+  }
+  .mob {
+    display: flex;
+    flex-direction: column;
+  }
+  .mob__logo {
+    width: 50%;
+    padding-top: 2%;
+  }
+  .mob__info-lang {
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+  }
+  .logos__text {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .menu_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu_logo__mob-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu_logo__menu {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .center {
+    width: 50px;
+  }
+  .center:before,
+  .center:after,
+  .center div {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+  .center:hover:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  .center:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  .center:hover div {
+    transform: scale(0);
+  }
+}
+@media (min-width: 390px) and (max-width: 768px) {
+  .publications__info {
+    font-family: Montserrat;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  .publications__header {
+    font-family: Montserrat;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  .info-items-el {
+    align-items: center;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vw;
+  }
+  .footer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .info-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logos__text {
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 50vw;
+    white-space: pre-wrap;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
