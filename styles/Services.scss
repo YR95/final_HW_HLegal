@@ -10,7 +10,6 @@
 
 .navigation__service {
   @include font_settings($font-family-Montserrat, 3rem, 400);
-  padding: 0.7vw;
   color: $color1;
 }
 
@@ -20,14 +19,18 @@
 
 .service-header {
   @include flex(flex, row, space-between, center);
-  padding: 2vw;
+  gap:1vw;
+  &__dash{
+    @include font_settings($font-family-Montserrat, 3.1rem, 400);
+    color: $color2;
+  }
 }
 
 .it-and-e-commerce-section {
   @include flex(flex, column, space-between, center);
   padding: 2vw;
   text-align: center;
-  gap: 3vw;
+  gap: 2.5vw;
 
   &__header {
     @include font_settings($font-family-Montserrat, 3rem, 400);
@@ -37,7 +40,7 @@
   &__info {
     @include font_settings($font-family-Montserrat, 1.2rem, 400);
     color: $color1;
-    padding: 3vw;
+    padding: 2vw;
   }
 
   &__button {
@@ -46,6 +49,12 @@
     padding: 10px 45px;
     text-align: center;
     color: $color1;
+  }
+  &__button:hover {
+    background: #3ad2d0;
+    border-color: $color2;
+    transition: background .2s linear;
+    transition-delay: .6s;
   }
 
   .lists-ecom{
@@ -56,6 +65,7 @@
       @include font_settings($font-family-Montserrat, 1.3rem, 400);
       color: $color1;
       text-align: justify;
+      padding: 2vw;
     }
     &__items{
       @include grid(grid, repeat(2, auto), repeat(2, auto));

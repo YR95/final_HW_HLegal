@@ -10,7 +10,6 @@
   font-family: Montserrat;
   font-size: 3rem;
   font-weight: 400;
-  padding: 0.7vw;
   color: rgb(255, 255, 255);
 }
 
@@ -23,7 +22,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2vw;
+  gap: 1vw;
+}
+.service-header__dash {
+  font-family: Montserrat;
+  font-size: 3.1rem;
+  font-weight: 400;
+  color: rgb(240, 20, 90);
 }
 
 .it-and-e-commerce-section {
@@ -33,7 +38,7 @@
   align-items: center;
   padding: 2vw;
   text-align: center;
-  gap: 3vw;
+  gap: 2.5vw;
 }
 .it-and-e-commerce-section__header {
   font-family: Montserrat;
@@ -46,7 +51,7 @@
   font-size: 1.2rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  padding: 3vw;
+  padding: 2vw;
 }
 .it-and-e-commerce-section__button {
   background: rgb(36, 163, 255);
@@ -54,6 +59,12 @@
   padding: 10px 45px;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+.it-and-e-commerce-section__button:hover {
+  background: #3ad2d0;
+  border-color: rgb(240, 20, 90);
+  transition: background 0.2s linear;
+  transition-delay: 0.6s;
 }
 .it-and-e-commerce-section .lists-ecom {
   border-top: solid 1px rgb(231, 231, 242);
@@ -68,6 +79,7 @@
   font-weight: 400;
   color: rgb(255, 255, 255);
   text-align: justify;
+  padding: 2vw;
 }
 .it-and-e-commerce-section .lists-ecom__items {
   display: grid;
