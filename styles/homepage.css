@@ -594,5 +594,9 @@
     white-space: pre-wrap;
   }
 }
+a:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
 
 /*# sourceMappingURL=homepage.css.map */

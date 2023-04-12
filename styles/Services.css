@@ -61,7 +61,7 @@
   color: rgb(255, 255, 255);
 }
 .it-and-e-commerce-section__button:hover {
-  background: #3ad2d0;
+  background: rgb(0, 0, 0);
   border-color: rgb(240, 20, 90);
   transition: background 0.2s linear;
   transition-delay: 0.6s;
