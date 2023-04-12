@@ -5,6 +5,11 @@
   list-style-type: none;
 }
 
+.mob {
+  visibility: hidden;
+  display: none;
+}
+
 .container-header {
   background: linear-gradient(to bottom left, rgb(50, 50, 100) 90%, rgb(240, 20, 90));
   display: flex;
@@ -441,14 +446,13 @@
     justify-content: center;
     align-items: center;
   }
-  .business .business__items {
+  .business__items {
     display: flex;
-    overflow: auto;
-  }
-  .business__items::-webkit-scrollbar {
-    display: none;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
   .business__items > * {
+    flex: 0 0 auto;
     padding: 2vw;
     font-family: Montserrat;
     font-size: 1.3rem;
@@ -482,7 +486,11 @@
   .info-items-el__img {
     width: 60vw;
   }
+  .navigation {
+    display: none;
+  }
   .mob {
+    visibility: visible;
     display: flex;
     flex-direction: column;
   }
