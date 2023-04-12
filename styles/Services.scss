@@ -19,8 +19,9 @@
 
 .service-header {
   @include flex(flex, row, space-between, center);
-  gap:1vw;
-  &__dash{
+  gap: 1vw;
+
+  &__dash {
     @include font_settings($font-family-Montserrat, 3.1rem, 400);
     color: $color2;
   }
@@ -50,6 +51,7 @@
     text-align: center;
     color: $color1;
   }
+
   &__button:hover {
     background: $color9;
     border-color: $color2;
@@ -57,17 +59,18 @@
     transition-delay: .6s;
   }
 
-  .lists-ecom{
+  .lists-ecom {
     border-top: solid 1px $color7;
     @include flex(flex, column, space-between, stretch);
 
-    &__info{
+    &__info {
       @include font_settings($font-family-Montserrat, 1.3rem, 400);
       color: $color1;
       text-align: justify;
       padding: 2vw;
     }
-    &__items{
+
+    &__items {
       @include grid(grid, repeat(2, auto), repeat(2, auto));
       gap: 2vw;
       column-gap: 3vw;
@@ -78,6 +81,7 @@
 
     }
   }
+
   ul li::before {
     content: "\2022";
     color: red;
@@ -85,5 +89,35 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+}
+
+.mob {
+  display: none;
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .mob {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+  .it-and-e-commerce-section .lists-ecom__items {
+    padding: 3vw;
+    @include grid(grid, repeat(1, auto), repeat(8, auto));
+    gap: 2vw;
+
+  }
+  .it-and-e-commerce-section__info {
+    @include font_settings($font-family-Montserrat, 0.9rem, 400);
+
+  }
+  .it-and-e-commerce-section__header{
+    @include font_settings($font-family-Montserrat, 2rem, 700);
+
+  }
+  .it-and-e-commerce-section{
+    padding: 4vw;
   }
 }

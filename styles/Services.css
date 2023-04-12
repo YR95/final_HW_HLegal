@@ -101,4 +101,37 @@
   margin-left: -1em;
 }
 
+.mob {
+  display: none;
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .mob {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+  .it-and-e-commerce-section .lists-ecom__items {
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(8, auto);
+    gap: 2vw;
+  }
+  .it-and-e-commerce-section__info {
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .it-and-e-commerce-section__header {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .it-and-e-commerce-section {
+    padding: 4vw;
+  }
+}
+
 /*# sourceMappingURL=Services.css.map */
