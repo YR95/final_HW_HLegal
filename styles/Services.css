@@ -17,6 +17,10 @@
   color: rgb(240, 20, 90);
 }
 
+.info-lang__link--isWhite {
+  color: rgb(50, 50, 100);
+}
+
 .service-header {
   display: flex;
   flex-direction: row;

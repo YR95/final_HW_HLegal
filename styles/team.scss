@@ -1,0 +1,115 @@
+@import "genaral__style";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.container-header--isWhite {
+  background: $color1;
+}
+
+.service-header--isWhite {
+  background: $color1;
+}
+
+.navigation--isWhite {
+  background: $color1;
+}
+
+.navigation__service--isWhite {
+  color: $color4;
+  @include font_settings($font-family-Montserrat, 3rem, 400);
+
+}
+
+.pictures {
+  @include flex(flex, column, center, center);
+
+  &__header {
+    @include font_settings($font-family-Montserrat, 3rem, 700);
+    padding: 4vw;
+
+    background: -webkit-linear-gradient(rgba(240, 20, 90, 1), rgba(239, 128, 128, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.pictures-sect {
+
+  @include grid(grid, repeat(3, auto), repeat(3, auto));
+  gap: 2vw;
+  column-gap: 3vw;
+  padding: 2vw;
+
+}
+
+.items-inf {
+  @include flex(flex, column, center, center);
+  gap: 1vw;
+
+  &__img {
+    width: 18vw;
+    border-radius: 3%;
+  }
+}
+
+.text-pic {
+  gap: 1vw;
+  @include flex(flex, row, center, center);
+
+}
+
+.names {
+  @include flex(flex, column, center, center);
+  gap: 1vw;
+
+  &__name {
+    @include font_settings($font-family-Montserrat, 1.1rem, 700);
+    color: $color4;
+  }
+
+  &__posit {
+    @include font_settings($font-family-Montserrat, 1.05rem, 400);
+    color: $color6;
+  }
+}
+
+.arrow:hover {
+  stroke: $color2;
+}
+.mob1{
+  display: none;
+}
+@media (min-width: 390px) and (max-width: 768px) {
+  .mob1 {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+  .pictures-sect {
+    @include grid(grid, repeat(1, auto), repeat(6, auto));
+
+  }
+  .items-inf__img {
+    width: 50vw;
+  }
+  .pictures__header {
+    @include font_settings($font-family-Montserrat, 2rem, 700);
+
+  }
+  .center {
+    background: $color4;
+    margin: 2vw;
+  }
+  .menu_logo{padding: 2vw;}
+  .menu_logo--dark{
+    @include font_settings($font-family-Montserrat, 1.5rem, 400);
+
+  }
+}

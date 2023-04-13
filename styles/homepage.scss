@@ -38,6 +38,10 @@
       background: $color2;
       border-radius: 18px;
     }
+    &--isWhite{
+      color: $color4;
+
+    }
   }
 
   &__link {
@@ -49,7 +53,6 @@
 
 
 }
-
 .logos {
   position: relative;
   text-align: center;
@@ -452,7 +455,9 @@ height: 50vh;
       background: $color1_1;
       @include flex(flex, row, space-around, center);
       padding: 3%;
-
+&--white{
+background: $color6;
+}
     }
 
 
@@ -474,6 +479,12 @@ height: 50vh;
       color: $color1;
       @include font_settings($font-family-Montserrat, 1rem, 700);
     }
+    &--white{
+      background: $color1;
+    }
+    &--dark{
+      color: $color4;
+    }
   }
 
 
@@ -492,6 +503,7 @@ height: 50vh;
     border-radius: 3px;
     margin: 7px 0;
     transition: 0.5s;
+
   }
   .center:hover:before {
     transform: translateY(12px) rotate(135deg);
@@ -537,6 +549,7 @@ width:50vw;
   }
 }
 a:hover {
-    color: rgba(255, 255, 255, 1);
+    //color: rgba(255, 255, 255, 1);
+    color: $color2;
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
   }

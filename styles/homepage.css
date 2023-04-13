@@ -50,6 +50,9 @@
   background: rgb(240, 20, 90);
   border-radius: 18px;
 }
+.info-lang__el--isWhite {
+  color: rgb(50, 50, 100);
+}
 .info-lang__link {
   font-family: Montserrat;
   font-size: 1.3rem;
@@ -503,6 +506,9 @@
     align-items: center;
     padding: 3%;
   }
+  .mob__info-lang--white {
+    background: rgb(202, 202, 219);
+  }
   .logos__text {
     font-family: Montserrat;
     font-size: 1rem;
@@ -525,6 +531,12 @@
     font-family: Montserrat;
     font-size: 1rem;
     font-weight: 700;
+  }
+  .menu_logo--white {
+    background: rgb(255, 255, 255);
+  }
+  .menu_logo--dark {
+    color: rgb(50, 50, 100);
   }
   .center {
     width: 50px;
@@ -592,7 +604,7 @@
   }
 }
 a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(240, 20, 90);
   box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 }
 

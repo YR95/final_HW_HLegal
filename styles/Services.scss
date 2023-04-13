@@ -16,6 +16,9 @@
 .info-lang__link--isPink {
   color: $color2;
 }
+.info-lang__link--isWhite {
+  color: $color4;
+}
 
 .service-header {
   @include flex(flex, row, space-between, center);

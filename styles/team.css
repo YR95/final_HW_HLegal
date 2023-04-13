@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container-header--isWhite {
+  background: rgb(255, 255, 255);
+}
+
+.service-header--isWhite {
+  background: rgb(255, 255, 255);
+}
+
+.navigation--isWhite {
+  background: rgb(255, 255, 255);
+}
+
+.navigation__service--isWhite {
+  color: rgb(50, 50, 100);
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pictures__header {
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 4vw;
+  background: -webkit-linear-gradient(rgb(240, 20, 90), rgb(239, 128, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pictures-sect {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 2vw;
+  column-gap: 3vw;
+  padding: 2vw;
+}
+
+.items-inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.items-inf__img {
+  width: 18vw;
+  border-radius: 3%;
+}
+
+.text-pic {
+  gap: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.names__name {
+  font-family: Montserrat;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(50, 50, 100);
+}
+.names__posit {
+  font-family: Montserrat;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgb(202, 202, 219);
+}
+
+.arrow:hover {
+  stroke: rgb(240, 20, 90);
+}
+
+.mob1 {
+  display: none;
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .mob1 {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+  .pictures-sect {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+  }
+  .items-inf__img {
+    width: 50vw;
+  }
+  .pictures__header {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .center {
+    background: rgb(50, 50, 100);
+    margin: 2vw;
+  }
+  .menu_logo {
+    padding: 2vw;
+  }
+  .menu_logo--dark {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=team.css.map */
