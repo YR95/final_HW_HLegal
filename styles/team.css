@@ -97,7 +97,7 @@
   stroke: rgb(240, 20, 90);
 }
 
-@media (min-width: 390px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .navigation {
     visibility: hidden;
     display: none;

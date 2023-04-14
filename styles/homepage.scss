@@ -155,7 +155,7 @@
   }
 }
 
-@media (min-width: 390px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
 
   .logos__H {
     width: 80vw;
@@ -365,7 +365,7 @@
   }
 }
 
-@media (min-width: 390px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .table {
     @include grid(grid, repeat(1, auto), repeat(12, auto));
 
@@ -525,7 +525,7 @@
 
 }
 
-@media (min-width: 390px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .publications__info {
     @include font_settings($font-family-Montserrat, 2.3rem, 700);
 
