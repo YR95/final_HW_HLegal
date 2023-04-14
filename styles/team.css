@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+.mob1 {
+  display: none;
+}
+
 .container-header--isWhite {
   background: rgb(255, 255, 255);
 }
@@ -93,15 +97,9 @@
   stroke: rgb(240, 20, 90);
 }
 
-.mob1 {
-  display: none;
-}
-
 @media (min-width: 390px) and (max-width: 768px) {
-  .mob1 {
-    visibility: visible;
-  }
   .navigation {
+    visibility: hidden;
     display: none;
   }
   .pictures-sect {
@@ -128,6 +126,10 @@
     font-family: Montserrat;
     font-size: 1.5rem;
     font-weight: 400;
+  }
+  .mob1 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
