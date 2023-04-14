@@ -1,0 +1,108 @@
+@import "genaral__style";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.mob1 {
+  display: none;
+}
+
+.general-info-cont {
+  @include flex(flex, row, center, center);
+  gap: 2vw;
+}
+
+.adr {
+  @include flex(flex, column, space-around, center);
+  gap: 2vw;
+  padding: 2vw;
+  text-align: justify;
+  margin: 2vw;
+
+  &__addr {
+    @include font_settings($font-family-Montserrat, 1.8rem, 400);
+    color: $color4;
+    border-bottom: solid 1px $color5;
+  }
+
+  &__num {
+    @include font_settings($font-family-Montserrat, 1.7rem, 400);
+    color: $color4;
+  }
+
+  &__email {
+    @include font_settings($font-family-Montserrat, 1.7rem, 400);
+    color: $color3;
+    border-bottom: solid 1px $color5;
+
+  }
+
+}
+
+.medias {
+  @include flex(flex, row, center, center);
+  gap: 1vw;
+  padding: 1vw;
+
+  &__text {
+    @include font_settings($font-family-Montserrat, 1rem, 700);
+    color: $color2;
+  }
+  &__svg:hover{
+    fill: $color2;
+  }
+}
+
+.pops{
+  background: $color8;
+  border-radius: 10px;
+  @include flex(flex, column, space-around, space-around);
+  gap: 1vw;
+  padding: 1.5vw;
+  text-align: justify;
+  margin: 2vw;
+  width: 27vw;
+  &__header{
+    @include font_settings($font-family-Montserrat, 2rem, 700);
+    background: -webkit-linear-gradient(rgb(240, 20, 90), rgb(239, 128, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__text{
+    @include font_settings($font-family-Montserrat, 1rem, 400);
+
+    background: $color1;
+    border-radius: 4px;
+    padding: 0.8vw 2.5vw;
+    border: none;
+    color: $color6;
+  &--isBigger{
+    padding: 1.8vw 3.5vw;
+
+  }
+  }
+  &__inf{
+    color: $color5;
+    @include font_settings($font-family-Montserrat, 1.08rem, 400);
+
+  }
+}
+
+
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .navigation {
+    visibility: hidden;
+    display: none;
+  }
+  .mob1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
