@@ -18,27 +18,31 @@
 }
 
 .adr {
-  @include flex(flex, column, space-around, center);
+  @include flex(flex, column, space-around, flex-start);
   gap: 2vw;
   padding: 2vw;
-  text-align: justify;
   margin: 2vw;
 
   &__addr {
     @include font_settings($font-family-Montserrat, 1.8rem, 400);
     color: $color4;
-    border-bottom: solid 1px $color5;
+    border-bottom: solid 2px $color5;
+    padding-bottom: 2vw;
+
   }
 
   &__num {
     @include font_settings($font-family-Montserrat, 1.7rem, 400);
     color: $color4;
+
   }
 
   &__email {
     @include font_settings($font-family-Montserrat, 1.7rem, 400);
     color: $color3;
     border-bottom: solid 1px $color5;
+    border-bottom: solid 2px $color5;
+    padding-bottom: 2vw;
 
   }
 
@@ -64,9 +68,9 @@
   @include flex(flex, column, space-around, space-around);
   gap: 1vw;
   padding: 1.5vw;
-  text-align: justify;
+  text-align: left;
   margin: 2vw;
-  width: 27vw;
+  width: 30vw;
   &__header{
     @include font_settings($font-family-Montserrat, 2rem, 700);
     background: -webkit-linear-gradient(rgb(240, 20, 90), rgb(239, 128, 128));
@@ -103,6 +107,19 @@
   .mob1 {
     display: flex;
     flex-direction: column;
+  }
+  .general-info-cont{
+    @include flex(flex, column, center, center);
+
+  }
+  .pops{
+    width: 85vw;
+    padding: 3vw;
+    gap: 5vw;
+  }
+  .adr__addr, .adr__num, .adr__email{
+    @include font_settings($font-family-Montserrat, 1.2rem, 400);
+padding: 2vw;
   }
 }
 
